@@ -2,7 +2,7 @@
 
 Application bureau (Windows) pour gérer les pèlerins Hadj/Omra : inscriptions, versements, dépenses, reçus PDF et sauvegarde de la base de données.
 
-Le code source se trouve dans le dossier **`gestion-hadj-main/`**.
+Le code source se trouve dans le dossier **`gestion-hadj/`**.
 
 ---
 
