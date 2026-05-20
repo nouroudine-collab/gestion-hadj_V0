@@ -1,0 +1,105 @@
+/* --- Fenêtre Principale de la Vue --- */
+QWidget {
+    background-color: #f8f9fa; /* Gris très clair pour le fond de page */
+    font-family: "Poppins", "Segoe UI", "Roboto", "Arial";
+}
+
+/* --- Barre Supérieure (Header) --- */
+QFrame#topBarContainer {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 80px;
+    border-radius: 8px;
+}
+
+QLabel#pageTitle {
+    color: #1A4A8E;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* --- Bouton Ajouter (Le vert "Action") --- */
+QPushButton#primaryButton {
+    background-color: #1A4A8E;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #1236ab;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: #0B3311;
+}
+
+/* --- La Carte (Conteneur du Tableau) --- */
+QFrame#card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+/* --- Barre de Recherche --- */
+QLineEdit {
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: #fcfcfc;
+    color: #333;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1A4A8E;
+    background-color: #ffffff;
+}
+
+/* --- TABLEAU (Le coeur de l'upgrade) --- */
+QTableView {
+    color: #2c3e50;
+    background-color: white;
+    border: none;
+    gridline-color: hsl(0, 0%, 20%);
+    selection-background-color: #e3f2fd;
+    selection-color: #1A4A8E;
+    alternate-background-color: #fafafa;
+    outline: none;
+}
+
+
+/* En-tête du Tableau */
+QHeaderView::section {
+    background-color: #1A4A8E;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-right: 1px solid #153d75;
+}
+
+
+
+/* Barre de défilement (Scrollbar) stylisée */
+QScrollBar:vertical {
+    border: none;
+    background: #f1f1f1;
+    width: 10px;
+    border-radius:10px
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ccc;
+    min-height: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #999;
+}

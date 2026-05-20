@@ -1,0 +1,146 @@
+/* Fond de la page */
+QWidget#dashboardView {
+    background-color: #f4f7f6;
+}
+
+/* Titre Principal */
+QLabel#dashboardTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a4a8e;
+}/* dashboard.qss */
+
+#dashboardView {
+    background-color: #f5f7fa;
+}
+
+#dashboardTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1A4A8E;
+    padding: 10px 0;
+}
+
+/* Stat Cards */
+#statCard{
+    background-color: white;
+    border-radius: 12px;
+}
+
+#statTitle {
+    font-size: 13px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Content Cards */
+#contentCard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Action Buttons */
+QPushButton#actionBtn {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    color: #333;
+}
+
+QPushButton#actionBtn:hover {
+    background-color: #e9ecef;
+    border-color: #1A4A8E;
+    color: #1A4A8E;
+}
+
+/* Recent Transactions List */
+#recentList {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+#recentList::item {
+    padding: 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#recentList::item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Transaction items */
+#transactionItem {
+    background-color: white;
+}
+
+#transactionItem:hover {
+    background-color: #f8f9fa;
+}
+
+/* Cartes de Stats */
+QFrame#statCard {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+QLabel#statTitle {
+    color: #7f8c8d;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+QLabel#statValue {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Cartes de Contenu (Actions & Transactions) */
+QFrame#contentCard {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e0e6ed;
+    padding: 15px;
+}
+
+QLabel#cardTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+/* Liste des transactions */
+QListWidget#recentList {
+    border: none;
+    background-color: transparent;
+}
+
+QListWidget#recentList::item {
+    border-bottom: 1px solid #f1f2f6;
+    padding: 5px;
+}
+
+QListWidget#recentList::item:selected {
+    background-color: #e3f2fd;
+    color: black;
+}
+
+QDialog#PilgrimDialog {
+    background-color: #fcfcfc;
+}

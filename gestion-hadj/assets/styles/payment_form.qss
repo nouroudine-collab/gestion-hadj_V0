@@ -1,0 +1,172 @@
+
+/* Dialog background */
+QDialog#PaymentDialog {
+    background-color: #F8F9FA;
+}
+
+/* Header styling */
+QLabel#headerLabel {
+    color: #1A4A8E;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1A4A8E;
+}
+
+/* Form labels */
+QLabel[class="formLabel"] {
+    color: #495057;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* Line edit styling */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #212529;
+    selection-background-color: #1A4A8E;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1A4A8E;
+    outline: none;
+}
+
+QLineEdit:hover {
+    border-color: #1A4A8E;
+}
+
+/* ComboBox styling */
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 13px;
+    color: #212529;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border-color: #1A4A8E;
+}
+
+QComboBox:focus {
+    border: 2px solid #1A4A8E;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px;
+    border-left: 1px solid #DEE2E6;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+QComboBox::down-arrow {
+    image: url(assets/icons/dropdown-arrow.svg);
+    margin-right: 5px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    selection-background-color: #1A4A8E;
+    selection-color: #FFFFFF;
+    padding: 4px;
+}
+
+/* Date edit styling */
+QDateEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 13px;
+    color: #212529;
+}
+
+QDateEdit:hover {
+    border-color: #1A4A8E;
+}
+
+QDateEdit:focus {
+    border: 2px solid #1A4A8E;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    width: 20px;
+}
+
+/* Amount input specific styling */
+
+
+/* Separator line */
+QFrame#separator {
+    background-color: #E9ECEF;
+    max-height: 1px;
+    margin: 10px 0;
+}
+
+/* Button styling */
+QPushButton {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Cancel button */
+#cancelBtn {
+    background-color: #FFFFFF;
+    border: 1px solid #d0d4dd;
+    color: #6C757D;
+}
+
+#cancelBtn:hover {
+    background-color: #F8F9FA;
+    border-color: #ADB5BD;
+    color: #495057;
+}
+
+#cancelBtn:pressed {
+    background-color: #E9ECEF;
+}
+
+/* Submit button */
+#submitBtn {
+    background-color: #1A4A8E;
+    border: none;
+    color: #FFFFFF;
+}
+
+#submitBtn:hover {
+    background-color: #0D3B73;
+}
+
+#submitBtn:pressed {
+    background-color: #062C54;
+}
+
+/* Tooltip styling */
+QToolTip {
+    background-color: #1A4A8E;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* ComboBox container for currency */
+QLabel#currencyLabel {
+    color: #6C757D;
+    font-weight: 500;
+    padding: 0 8px;
+}

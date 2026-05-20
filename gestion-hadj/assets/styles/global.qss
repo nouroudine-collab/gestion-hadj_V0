@@ -1,0 +1,124 @@
+/* Global */
+#appTitle {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contentArea {
+    background-color: #f5f7fb;
+    padding: 20px;
+}
+QWidget {
+    font-family: "Poppins", "Segoe UI", Arial;
+    font-size: 14px;
+}
+QWidget#card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+/* Titles */
+#pageTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* Card */
+#card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%
+}
+
+/* Inputs */
+QLineEdit {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3b82f6;
+}
+
+
+QHeaderView {
+    background-color: transparent;
+}
+
+QTableView::item {
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+    color: black; /* Un gris très foncé, presque noir */
+    font-size: 13px;
+}
+
+/* Style de chaque cellule de l'en-tête */
+QHeaderView::section {
+    background-color: #1A4A8E; /* Bleu Darou Salam */
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-right: 1px solid #153d75; /* Séparateur discret */
+}
+
+/* Style spécifique pour la première cellule (arrondi gauche) */
+QHeaderView::section:horizontal:first {
+    border-top-left-radius: 8px;
+}
+
+/* Style spécifique pour la dernière cellule (arrondi droit) */
+QHeaderView::section:horizontal:last {
+    border-top-right-radius: 8px;
+    border-right: none;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: transparent;
+    color: #cbd5e1;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+}
+QPushButton:hover {
+    background-color: #334155;
+    color: white;
+}
+QPushButton:pressed {
+    background-color: #475569;
+}
+
+
+/* Cibler le dialogue et ses composants */
+QDialog#PaymentDialog {
+    background-color: #F1F1F1; /* Fond blanc pur */
+}
+
+QDialog#PaymentDialog QLabel {
+    color: #333333; /* Texte gris foncé/noir */
+}
+
+QDialog#PaymentDialog QLineEdit, 
+QDialog#PaymentDialog QComboBox, 
+QDialog#PaymentDialog QDateEdit {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Style spécifique pour le titre bleu dans le formulaire */
+QDialog#PaymentDialog QLabel#headerTitle {
+    color: #1A4A8E;
+}

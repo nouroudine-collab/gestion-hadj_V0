@@ -1,0 +1,340 @@
+/* pilgrim_form.qss - Complete stylesheet for PilgrimForm dialog */
+
+/* ========== MAIN DIALOG ========== */
+QDialog#PilgrimDialog {
+    background-color: #f5f7fa;
+}
+
+/* ========== HEADER SECTION ========== */
+#headerContainer {
+    padding: 25px 30px;
+    border-bottom: 1px solid #0d355e;
+}
+
+#headerLabel {
+    color: #1A4A8E;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Poppins","Segoe UI", "Roboto", sans-serif;
+    background-color: transparent;
+}
+
+#subHeaderLabel {
+    color: black;
+    font-size: 13px;
+    font-family: "Poppins", "Segoe UI", "Roboto", sans-serif;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+/* ========== CONTENT WIDGETS ========== */
+#contentWidget {
+    background-color: #ffffff;
+}
+
+QScrollArea {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* ========== FORM GRID & SECTIONS ========== */
+#sectionTitle {
+    color: #1A4A8E;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins", "Segoe UI", "Roboto", sans-serif;
+    padding: 10px 0px 5px 0px;
+    margin-top: 10px;
+    border-bottom: 2px solid #1A4A8E;
+    background-color: transparent;
+}
+
+QLabel[class="formLabel"] {
+    color: #495057;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "Poppins", "Segoe UI", "Roboto", sans-serif;
+    background-color: transparent;
+}
+
+/* ========== QLINEEDIT STYLING ========== */
+QLineEdit {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    min-height: 20px;
+    font-size: 13px;
+    font-family: "Poppins","Segoe UI", "Roboto", sans-serif;
+}
+
+QLineEdit:hover {
+    border-color: #1A4A8E;
+    background-color: #fafcff;
+}
+
+QLineEdit:focus {
+    border-color: #1A4A8E;
+    border-width: 2px;
+    outline: none;
+}
+
+QLineEdit:read-only {
+    background-color: #f2f4f7;
+    color: #98a2b3;
+    border-color: #e4e7ec;
+}
+
+/* ========== QCOMBOBOX STYLING ========== */
+QComboBox {
+    background: none;
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 7px 12px;
+    min-height: 20px;
+    font-size: 13px;
+    font-family: "Poppins", "Segoe UI", "Roboto", sans-serif;
+}
+
+QComboBox:hover {
+    border-color: #1A4A8E;
+    background-color: #fafcff;
+}
+
+QComboBox:focus {
+    border-color: #1A4A8E;
+    border-width: 2px;
+    outline: none;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+    right: 4px;
+}
+
+/* CSS Arrow */
+QComboBox::down-arrow {
+    image: url(assets/icons/dropdown-arrow.svg);
+}
+
+QComboBox:hover::down-arrow {
+    border-top-color: #1A4A8E;
+}
+
+/* Dropdown popup */
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    selection-background-color: #1A4A8E;
+    selection-color: #ffffff;
+    outline: none;
+    padding: 4px;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 8px 12px;
+    border-radius: 4px;
+    min-height: 20px;
+    color: #2c3e50;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #e8f0fe;
+    color: #1A4A8E;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #1A4A8E;
+    color: #ffffff;
+}
+
+/* ========== QDATEEDIT STYLING ========== */
+QDateEdit {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 7px 12px;
+    min-height: 20px;
+    font-size: 13px;
+    font-family: "Poppins", "Segoe UI", "Roboto", sans-serif;
+}
+
+QDateEdit:hover {
+    border-color: #1A4A8E;
+    background-color: #fafcff;
+}
+
+QDateEdit:focus {
+    border-color: #1A4A8E;
+    border-width: 2px;
+    outline: none;
+}
+
+QDateEdit::drop-down {
+    border: none;
+    width: 30px;
+    right: 4px;
+}
+
+/* CSS Arrow for DateEdit */
+QDateEdit::down-arrow {
+    image: url(assets/icons/calendar.svg);
+    margin-right: 8px;
+}
+
+QDateEdit:hover::down-arrow {
+    border-top-color: #1A4A8E;
+}
+
+/* Calendar Popup */
+QDateEdit QCalendarWidget {
+    background-color: #ffffff;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+}
+
+QDateEdit QCalendarWidget QToolButton {
+    image: url(assets/icons/calendar.svg);
+}
+
+QDateEdit QCalendarWidget QToolButton:hover {
+    background-color: #e8f0fe;
+}
+
+QDateEdit QCalendarWidget QToolButton:pressed {
+    background-color: #d0e0fc;
+}
+
+QDateEdit QCalendarWidget QMenu {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QDateEdit QCalendarWidget QMenu::item {
+    padding: 6px 20px;
+}
+
+QDateEdit QCalendarWidget QMenu::item:selected {
+    background-color: #1A4A8E;
+    color: #ffffff;
+}
+
+QDateEdit QCalendarWidget QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #fafcff;
+    selection-background-color: #1A4A8E;
+    selection-color: #ffffff;
+}
+
+QDateEdit QCalendarWidget QHeaderView::section {
+    background-color: #f7f9fc;
+    color: #1A4A8E;
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+}
+
+QDateEdit QCalendarWidget QTableView::item {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QDateEdit QCalendarWidget QTableView::item:hover {
+    background-color: #e8f0fe;
+    color: #1A4A8E;
+}
+
+QDateEdit QCalendarWidget QTableView::item:selected {
+    background-color: #1A4A8E;
+    color: #ffffff;
+}
+
+/* ========== SEPARATOR ========== */
+#separator {
+    background-color: #e4e7ec;
+    margin: 0px 25px;
+}
+
+/* ========== BUTTONS ========== */
+#cancelBtn {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+}
+
+#cancelBtn:hover {
+    background-color: #f7f9fc;
+    border-color: #1A4A8E;
+}
+
+#cancelBtn:pressed {
+    background-color: #e8f0fe;
+}
+
+#submitBtn {
+    background-color: #1A4A8E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+#submitBtn:hover {
+    background-color: #143d72;
+}
+
+#submitBtn:pressed {
+    background: #143d72;
+}
+
+/* ========== SCROLLBAR ========== */
+QScrollBar:vertical {
+    background-color: #f2f4f7;
+    width: 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cbd5e1;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94a3b8;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
+
+/* ========== PLACEHOLDER TEXT ========== */
+QLineEdit::placeholder {
+    color: #98a2b3;
+    font-style: italic;
+}
+
+/* ========== ERROR STATE (from your validation) ========== */
+QLineEdit[styleSheet*="border: 2px solid #C62828;"] {
+    border: 2px solid #C62828 !important;
+}
